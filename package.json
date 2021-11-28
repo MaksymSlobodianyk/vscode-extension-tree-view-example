@@ -9,10 +9,10 @@
 	"publisher": "Maksym Slobodianyk",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/MaksymSlobodianyk/github-extension-tree-view-example"
+		"url": "https://maksymslobodianyk.github.io/vscode-extension-tree-view-example/"
 	},
 	"bugs": {
-		"url": "https://github.com/MaksymSlobodianyk/github-extension-tree-view-example/issues"
+		"url": "https://maksymslobodianyk.github.io/vscode-extension-tree-view-example/issues"
 	},
 	"engines": {
 		"vscode": "^1.57.0"
