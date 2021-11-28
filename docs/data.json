@@ -2,23 +2,25 @@
     "root": [
         {
             "title": "App configuration chapter",
+            "link": "https://www.google.com.ua/",
             "links": [
                 {
                     "title": "First link",
-                    "link": "/documentation_page_1.md"
+                    "link": "https://www.google.com.ua/"
                 },
                 {
                     "title": "Second link",
-                    "link": "/documentation_page_2.md"
+                    "link": "https://www.google.com.ua/"
                 }
             ]
         },
         {
             "title": "App development chapter",
+            "link": "https://www.google.com.ua/",
             "links": [
                 {
                     "title": "Third link",
-                    "link": "/documentation_page_3.md"
+                    "link": "https://www.google.com.ua/"
                 }
             ]
         }
