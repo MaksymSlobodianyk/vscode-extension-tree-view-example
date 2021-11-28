@@ -8,11 +8,10 @@ import {
     env,
 } from 'vscode';
 import { configuration } from '../configurations';
-import BasicTreeItem from '../treeItems/BasicTreeItem';
 import { getChapterLinksItems, getChaptersItems } from '../services/treeItemsService';
 import Chapter from '../treeItems/Chapter';
 
-export class DocumentationProvider implements TreeDataProvider<BasicTreeItem>, Disposable {
+export class DocumentationProvider implements TreeDataProvider<TreeItem>, Disposable {
     private readonly _disposable: Disposable;
     private _onDidChangeTreeData: EventEmitter<Chapter | undefined | null | void> = new EventEmitter<
         Chapter | undefined | null | void
@@ -31,11 +30,9 @@ export class DocumentationProvider implements TreeDataProvider<BasicTreeItem>, D
         return element;
     }
 
-    getChildren(element?: BasicTreeItem): Thenable<BasicTreeItem[]> {
-        if (element) {
-            if (element instanceof Chapter) {
-                return getChapterLinksItems(element.nestedLinks);
-            }
+    getChildren(element?: TreeItem): Thenable<TreeItem[]> {
+        if (element instanceof Chapter) {
+            return getChapterLinksItems(element.nestedLinks);
         }
         return getChaptersItems();
     }
