@@ -1,0 +1,26 @@
+{
+    "root": [
+        {
+            "title": "App configuration chapter",
+            "links": [
+                {
+                    "title": "First link",
+                    "link": "/documentation_page_1.md"
+                },
+                {
+                    "title": "Second link",
+                    "link": "/documentation_page_2.md"
+                }
+            ]
+        },
+        {
+            "title": "App development chapter",
+            "links": [
+                {
+                    "title": "Third link",
+                    "link": "/documentation_page_3.md"
+                }
+            ]
+        }
+    ]
+}
