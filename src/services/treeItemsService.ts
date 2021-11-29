@@ -1,11 +1,10 @@
-import BasicTreeItem from "../treeItems/BasicTreeItem";
 import Chapter from "../treeItems/Chapter";
 import Link from "../treeItems/Link";
 import { getDocumentationConfig } from "./documentationService";
-import { TreeItemCollapsibleState, window } from "vscode";
+import { TreeItem, TreeItemCollapsibleState, window } from "vscode";
 import { ChapterNode, LinkNode } from "../types";
 
-export const getChapterLinksItems = async (nestedLinks: LinkNode[]): Promise<BasicTreeItem[]> => {
+export const getChapterLinksItems = async (nestedLinks: LinkNode[]): Promise<TreeItem[]> => {
 	const links: Link[] = convertLinksItems(nestedLinks);
 	return Promise.resolve([...links]);
 };
